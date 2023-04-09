@@ -1,0 +1,73 @@
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: lightgray;
+}
+body{
+    background-color: #000000;
+}
+.bg-text {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    font-family: "Marker Felt";
+
+    color: #b1b2ee;
+    font-weight: bold;
+//border-radius: 10px;
+//border: 3px solid white;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.header-textt {
+    position: absolute;
+    /*top: 50%;*/
+    /*left: 50%;*/
+    top:40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffca1b;
+    font-weight: bold;
+
+}
+.box2 {
+    /*background-color: rgba(0,0,0,.5);*/
+    background-color: rgba(255, 195, 116, 0.82);
+    border: 5px solid rgb(255, 231, 133);
+    border-radius: 10px;
+    color: #000000;
+    width: 300px;
+
+
+
+}
+header div h1 div a:hover {
+    color: lightgray;
+}

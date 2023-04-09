@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="project_11.css">
+    <title>My Personal Website</title>
+    <style>
+        /* Add styles for header */
+        header {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        /* Add styles for the general section */
+        .genral {
+            text-align: center;
+            padding: 30px;
+        }
+        /* Add styles for the section with two images */
+        .genral_2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        /* Add styles for images */
+        .iimage {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            margin: 20px;
+            transition: transform 0.5s ease-in-out;
+        }
+        /* Add styles for table */
+        table {
+            width: 60%;
+            margin: 20px auto;
+            text-align: center;
+        }
+        /* Add styles for table cells */
+        .text {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+<!--            <li><a href="personal.html">My Personal Website</a></li>-->
+            <li><a href="homepage.html" >Home 🏠</a></li>
+            <li><a href="personal.html">About Me :)</a></li>
+            <li><a href="resume.html">Resume 😂</a></li>
+            <li><a href="activity.html">Activities 🎖️</a></li>
+            <li><a href="overview.html"> Overview 👀</a></li>
+            <li><a href="startingwithhtml.html">Contact 📮</a></li>
+        </ul>
+    </nav>
+</header>
+
+<script>
+    window.addEventListener('load', function() {
+        document.querySelector('header').style.opacity = 1;
+    });
+
+    const images = document.querySelectorAll('.iimage');
+    images.forEach(img => {
+        img.addEventListener('mouseover', function() {
+            img.style.transform = "scale(1.1)";
+        });
+        img.addEventListener('mouseout', function() {
+            img.style.transform = "scale(1)";
+        });
+    });
+</script>
+
+<main>
+    <div class="genral">
+        <h2 class="hr-lines" style="padding-top: 5%">Summery About Me</h2>
+    </div>
+    <section class="genral">
+        <img class="iimage" src="tamucc_1.jpg">
+        <h3>What I am Doing Now?</h3>
+        <p>I am a computer science student from Texas A&M University at Corpus Christi. My area of concentration is system programming and I am passionate about this field.</p>
+    </section>
+    <section  class="genral_2">
+        <img class="iimage" src="CODE_1.jpg" style="float: right" >
+        <h3 align="center"> Future Goal?</h3>
+        <p id="summery" ><center>My goal for the future is to become a data scientist and a systems developer. I am eager to put my knowledge and skills into practice, and I dream of working with organizations like OpenAI, IBM, Orcale, where I can make a difference in the world of technology. I believe that my education and dedication to this field will help me achieve my dreams and make a positive impact in the world.</center></p>
+    </section>
+
+    <section  class="genral_2">
+
+        <img class="iimage" src="js_1.png" style="float: right" >
+
+        <script>
+            const images = document.querySelectorAll('.iimage');
+            images.forEach(img => {
+                img.addEventListener('mouseover', function(){
+                    img.style.transform = "scale(1.1)";
+                });
+                img.addEventListener('mouseout', function(){
+                    img.style.transform = "scale(1)";
+                });
+            });
+        </script>
+
+        <h3 align="center"> Things in Progess plus Upcoming targets</h3>
+        <table align="center">
+            <thead >
+            <tr >
+                <th class="text">Things that are completed</th>
+                <th class="text">In progress</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="text">C</td>
+                <td class="text">Javascript</td>
+            </tr>
+            <tr>
+                <td class="text">C++</td>
+            </tr>
+            <tr>
+                <td class="text">Python</td>
+            </tr>
+            </tbody>
+        </table>
+
+
+    </section>
+    <footer>
+        <div>
+            <hr>
+            <hr>
+
+            <table>
+                <thead>
+                <th
+
+                <table>
+                    <thead >
+                    <th>
+                        <a href="mailto:rajapatel1670@icloud.com">
+                            <img src="mail_100_x_100.png" class="imgtiny" ></a>
+                    </th>
+                    <th>
+                        <a href="https://www.linkedin.com/in/raj-patel-2a4299263/">
+                            <img src="linkin_100_x_100.png" class="imgtiny"></a>
+                    </th>
+                    <th>
+                        <a href="location.html">
+                            <img src="location_100_x_100.png" class="imgtiny" ></a>
+                    </th>
+                    <th>
+                        <a href="links.html">
+                            <img src="links_100_x_100.png" class="imgtiny"></a>
+                    </th>
+                    <th>
+                        <a href="https://github.com/RAJPATEL293/">
+                            <img src="github_100_x_100.png" class="imgtiny"></a>
+                    </th>
+
+                    </thead>
+                </table>
+
+
+
+                </th>
+                </thead>
+            </table>
+        </div>
+    </footer>
+
+</main>
+
+</body>
+</html>

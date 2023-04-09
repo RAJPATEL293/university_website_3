@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Animation</title>
+  <style>
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .text {
+      margin-right: 20px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .image {
+      width: 200px;
+      height: 200px;
+      transition: transform 0.3s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="text">Hover over me</div>
+  <img class="image" src="image.jpeg" alt="Image">
+</div>
+<script>
+  const text = document.querySelector('.text');
+  const image = document.querySelector('.image');
+
+  text.addEventListener('mouseover', function() {
+    image.style.transform = "scale(1.1)";
+  });
+
+  text.addEventListener('mouseout', function() {
+    image.style.transform = "scale(1)";
+  });
+</script>
+</body>
+</html>

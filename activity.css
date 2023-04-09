@@ -1,0 +1,88 @@
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: lightgray;
+}
+body{
+    background-color: #000000;
+}
+.vertical {
+    border-left: 6px dotted #ffa64f;
+    position:absolute;
+    bottom: -140vh;
+    left: 8%;
+    height: 220%;
+}
+.horizontal{
+    border:#ffa64f;
+    border-top: 6px dotted #ffa64f;
+    position:absolute;
+    left: 10%;
+    top:40%;
+    width: 30% ;
+    height: 6px;
+
+}
+.horizontal2{
+    border:#ffa64f;
+    border-top: 6px dotted #ffa64f;
+    position:absolute;
+    left: 10%;
+    bottom: 4%;
+    width: 30%;
+    height: 6px;
+}
+.horizontal3{
+    border:#ffa64f;
+    border-top: 6px dotted #ffa64f;
+    position:absolute;
+    left: 10%;
+    bottom: -50%;
+    width: 30%;
+    height: 6px;
+}
+.horizontal4{
+    border:#ffa64f;
+    border-top: 6px dotted #ffa64f;
+    position:absolute;
+    left: 10%;
+    bottom: -100%;
+    width: 30%;
+    height: 6px;
+}
+.image1{
+    position: absolute; left: 110%; top:-2500%;
+}
+.image2{
+    position: absolute; left: 110%; bottom: -2500%;
+}
+.image3{
+    position: absolute; left: 110%; bottom: -2000%;
+}
+
+.image4{
+    position: absolute; left: 110%; bottom: -4500%;
+}
+
+table{
+    width: 100%;
+}
