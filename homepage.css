@@ -1,6 +1,8 @@
 .header-image {
-    background-image: url('IMG_3171.JPG');
+    /*background-image: url('IMG_3171.JPG');*/
+    background-image: url('pexels-stephan-seeber-1261728.jpg');
     height: 100dvmin;
+    width: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
